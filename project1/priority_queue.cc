@@ -10,25 +10,25 @@ templatePriorityQueue<int>::~templatePriorityQueue(){
 
 template <>
 bool templatePriorityQueue<int>::empty() const{
-        return storage.empty();
+        return storage_.empty(); // change member variable name including '_'
 }
 
 template <>
 int templatePriorityQueue<int>::size() {
-        return storage.size();
+        return storage_.size(); // change member variable name including '_'
 }
 
 template <>
 const int& templatePriorityQueue<int>::top() const{
-        return storage.top();
+        return storage_.top(); // change member variable name including '_'
 }
 
 template <>
 void templatePriorityQueue<int>::pop(){
-        storage.pop();
+        storage_.pop(); // change member variable name including '_'
 }
 
 template <>
 void templatePriorityQueue<int>::push(const int& val){
-        storage.push(val);
+        storage_.push(val); // change member variable name including '_'
 }
