@@ -21,7 +21,7 @@ int main(int argc, char* argv[]){
 	int custom_number = 0; // change the variable name, customNumber to custom_number
 
 	//empty check
-	if(priQueue.empty()){
+	if (priQueue.empty()) { // add the spce after 'if' and before '{'
 		cout << "[!] Priority Queue is empty - initalized" << endl;
 	}
 	else{ 
@@ -36,7 +36,7 @@ int main(int argc, char* argv[]){
 	pushQueue(&priQueue,598);
 	pushQueue(&priQueue,302);
 
-	if(argc > 1){ // remove the space before ')' and after '('
+	if (argc > 1) { // remove the space before ')' and after '(',  add the spce after 'if' and before '{'
 		custom_number = atoi(argv[1]);
 		if(custom_number > -500 && custom_number < 2000){ // remove the space before ')' and after '('
 			pushQueue(&priQueue,custom_number);
@@ -50,11 +50,11 @@ int main(int argc, char* argv[]){
 	}
 
 	//empty & size
-	if(priQueue.empty()){
+	if (priQueue.empty()) { // add the spce after 'if' and before '{'
 		cout << "[-] Priority Queue is empty. - Push method did not work!" << endl;
 		return -1;
 	}
-	else{
+	else {
 		cout << "[+] Priority Queue has data. - Queue Size : " << priQueue.size() <<endl;
 	}
 
