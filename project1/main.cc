@@ -24,7 +24,7 @@ int main(int argc, char* argv[]){
 	if (priQueue.empty()) { // add the spce after 'if' and before '{'
 		cout << "[!] Priority Queue is empty - initalized" << endl;
 	}
-	else{ 
+	else {  //add the spce after 'else'
 		// add error process in case no error
 		cout << "[-] Priority Queue is not empty after intialization and error process << endl;
 		return -1;
@@ -38,14 +38,14 @@ int main(int argc, char* argv[]){
 
 	if (argc > 1) { // remove the space before ')' and after '(',  add the spce after 'if' and before '{'
 		custom_number = atoi(argv[1]);
-		if(custom_number > -500 && custom_number < 2000){ // remove the space before ')' and after '('
+		if (custom_number > -500 && custom_number < 2000) { // remove the space before ')' and after '(', add the spce after 'if' and before '{'
 			pushQueue(&priQueue,custom_number);
 		}
-		else{
+		else { //add the spce after 'else'
 			pushQueue(&priQueue,-1);
 		}
 	}
-	else{
+	else {  //add the spce after 'else'
 		pushQueue(&priQueue,-1);
 	}
 
