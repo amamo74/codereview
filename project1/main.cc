@@ -18,7 +18,7 @@ void popQueue(templatePriorityQueue<T>* Que){
 
 int main(int argc, char* argv[]){
 	templatePriorityQueue<int> priQueue;
-	int customNumber = 0;
+	int custom_number = 0; // change the variable name, customNumber to custom_number
 
 	//empty check
 	if(priQueue.empty()){
@@ -37,9 +37,9 @@ int main(int argc, char* argv[]){
 	pushQueue(&priQueue,302);
 
 	if(argc > 1){ // remove the space before ')' and after '('
-		customNumber = atoi(argv[1]);
-		if(customNumber > -500 && customNumber < 2000){ // remove the space before ')' and after '('
-			pushQueue(&priQueue,customNumber);
+		custom_number = atoi(argv[1]);
+		if(custom_number > -500 && custom_number < 2000){ // remove the space before ')' and after '('
+			pushQueue(&priQueue,custom_number);
 		}
 		else{
 			pushQueue(&priQueue,-1);
