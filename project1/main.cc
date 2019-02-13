@@ -24,6 +24,12 @@ int main(int argc, char* argv[]){
 	if(priQueue.empty()){
 		cout << "[!] Priority Queue is empty - initalized" << endl;
 	}
+	else{ 
+		// add error process in case no error
+		cout << "[-] Priority Queue is not empty after intialization and error process << endl;
+		return -1;
+	}
+	
 
 	// push
 	pushQueue(&priQueue,23);
